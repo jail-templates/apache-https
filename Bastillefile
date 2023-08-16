@@ -1,0 +1,6 @@
+CMD env ASSUME_ALWAYS_YES=YES /usr/sbin/pkg bootstrap
+CMD /usr/sbin/pkg update
+PKG apache24
+CP usr /
+SYSRC apache24_enable=YES
+SERVICE apache24 start
