@@ -11,6 +11,9 @@ Bastille template to install and configure the Apache HTTP server with some sane
   * Disabled TRACE method by default (`TraceEnable off`)
   * Reduced public server information (`ServerTokens Prod`)
   * Reduced `Timeout` of 30 seconds (`Timeout 30`)
+* Support for php-fpm
+  * Multi-Processing Module: `mpm_event_module` (switch to `mpm_prefork_module` for `mod_php`)
+  * `proxy_module` and `proxy_fcgi` enabled by default (disable when no need for php).
 
 ## Bootstrap
 ```
