@@ -19,5 +19,5 @@ bastille bootstrap https://github.com/jail-templates/apache-https
 
 ## Apply template
 ```
-bastille template $JAIL jail-templates/apache
+bastille template $JAIL jail-templates/apache-https
 ```
