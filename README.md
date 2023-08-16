@@ -14,10 +14,10 @@ Bastille template to install and configure the Apache HTTP server with some sane
 
 ## Bootstrap
 ```
-bastille bootstrap https://github.com/nozel-org/bastillebsd/apache
+bastille bootstrap https://github.com/jail-templates/apache-https
 ```
 
 ## Apply template
 ```
-bastille template $JAIL nozel-org/apache
+bastille template $JAIL jail-templates/apache
 ```
