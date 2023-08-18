@@ -1,6 +1,7 @@
 PKG apache24
 CP usr /
 CMD sed -i '' 's%#ServerName www.example.com:80%ServerName ${JAIL_IP}%g' /usr/local/etc/apache24/httpd.conf
-CMD printf "<h1>It works!</h1>\n\n" > /usr/local/www/index.html
+CMD printf "<html><body><h1>It works!</h1></body></html>\n\n" > /usr/local/www/index.html
+CMD rm -rf /usr/local/www/apache24
 SYSRC apache24_enable=YES
 SERVICE apache24 start
