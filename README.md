@@ -32,4 +32,4 @@ Templates will be maintained until their respective software version is end-of-l
 If you have a question, suggestion or find a bug, please let us know via an Issues in the relevant repository or send us an email.
 
 ## License
-All templates are distributed under the 3-Clause BSD NON-AI License. See `LICENSE` in every template repository for more information.
+All templates are distributed under the 3-Clause BSD License. See `LICENSE` in every template repository for more information.

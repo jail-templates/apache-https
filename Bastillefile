@@ -1,7 +1,24 @@
+########################################################################################
+# Copyright (c) 2023, Nozel, Sebas Veeke. All rights reserved.
+#
+# Licenced under a 3-Clause BSD License (https://opensource.org/license/bsd-3-clause).
+#
+# Contact:
+# > e-mail      mail@nozel.org
+# > GitHub      jail-templates
+########################################################################################
+
+# install required packages
 PKG apache24
+
+# copy files
 CP usr /
+
+# configure apache
 CMD sed -i '' 's%#ServerName www.example.com:80%ServerName ${JAIL_IP}%g' /usr/local/etc/apache24/httpd.conf
 CMD printf "<html><body><h1>It works!</h1></body></html>\n\n" > /usr/local/www/index.html
 CMD rm -rf /usr/local/www/apache24
+
+# enable and start apache
 SYSRC apache24_enable=YES
 SERVICE apache24 start
