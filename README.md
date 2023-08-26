@@ -5,7 +5,7 @@ Bastille template to install and configure the Apache HTTP Server with some sane
 * `DocumentRoot` is `/usr/local/www`.
 * Some sane defaults:
   * No directory listings by default (`-Indexes`).
-  * No following of symlinks by default (`-FollowSymlinks`).
+  * Follow symlinks only if owner matches (`+SymLinksIfOwnerMatch`).
   * No server side includes by default (`-Includes`).
   * Limit methods to GET, POST and HEAD (`LimitExcept`).
   * Disabled TRACE method by default (`TraceEnable off`).
